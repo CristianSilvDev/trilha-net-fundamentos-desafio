@@ -44,7 +44,11 @@ namespace DesafioFundamentos.Models
             if (veiculos.Any())
             {
                 Console.WriteLine("Os veículos estacionados são:");
-                veiculos.ToList();
+                foreach (string item in veiculos)
+                {
+                    Console.WriteLine(item.ToString());
+                }
+
             }
             else
             {
